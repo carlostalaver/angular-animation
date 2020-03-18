@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'animation-login';
+  toState = 'stateLogin';
+
+  login() {
+    this.toState = 'stateLogin';
+  }
+
+  register() {
+    this.toState = 'stateRegister';
+  }
 }
